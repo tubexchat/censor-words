@@ -1,0 +1,7 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1.本项目的部署在cloudflare，注意runtime为edge这一问题
+2. 这是一个Next.js 14的项目
