@@ -36,6 +36,17 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
     'Authorization': `Bearer ${localStorage.getItem('token')}`
   })
 
+  // 页面加载时获取数据
+  useEffect(() => {
+    if (activeTab === 'words') {
+      loadSensitiveWords()
+    } else if (activeTab === 'users') {
+      loadUsers()
+    } else if (activeTab === 'logs') {
+      loadLogs()
+    }
+  }, [activeTab])
+
   // 处理Word文档
   const handleWordUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
@@ -145,6 +156,32 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
       console.error('加载敏感词库失败:', error)
     } finally {
       setIsLoadingWords(false)
+    }
+  }
+
+  const deleteSensitiveWords = async () => {
+    if (!confirm('确认删除整个敏感词库？此操作不可恢复！')) {
+      return
+    }
+
+    setIsProcessing(true)
+    try {
+      const response = await fetch('/api/sensitive-words', {
+        method: 'DELETE',
+        headers: getAuthHeaders()
+      })
+
+      const data = await response.json()
+      if (response.ok && data.success) {
+        setMessage({ type: 'success', text: data.message })
+        setSensitiveWords([])
+      } else {
+        setMessage({ type: 'error', text: data.error || '删除失败' })
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: '网络错误，请重试' })
+    } finally {
+      setIsProcessing(false)
     }
   }
 
@@ -303,9 +340,21 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
           <FileSpreadsheet className="mr-2" size={24} />
           敏感词库管理
         </h2>
-        <span className="text-sm text-gray-500">
-          当前词库数量: {sensitiveWords.length}
-        </span>
+        <div className="flex items-center space-x-4">
+          <span className="text-sm text-gray-500">
+            当前词库数量: {sensitiveWords.length}
+          </span>
+          {sensitiveWords.length > 0 && (
+            <button
+              onClick={deleteSensitiveWords}
+              disabled={isProcessing}
+              className="flex items-center px-3 py-1 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 disabled:bg-gray-300 transition-colors"
+            >
+              <Trash2 className="mr-1" size={14} />
+              清空词库
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="border-2 border-dashed border-gray-300 rounded-lg p-6">
@@ -323,7 +372,8 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
               {excelFile ? excelFile.name : '点击选择Excel敏感词库文件'}
             </p>
             <p className="text-sm text-gray-400 mt-2">
-              第一列：敏感词，第二列：替换词
+              第一列：敏感词，第二列：替换词<br/>
+              上传后将自动按敏感词长度排序（长词优先替换）
             </p>
           </label>
         </div>
@@ -348,7 +398,12 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
         </div>
       ) : (
         <div className="bg-gray-50 rounded-lg p-4 max-h-96 overflow-y-auto">
-          <h3 className="font-semibold mb-3">当前敏感词库：</h3>
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="font-semibold">当前敏感词库：</h3>
+            {sensitiveWords.length > 0 && (
+              <span className="text-xs text-gray-400">已按词长排序（长词优先）</span>
+            )}
+          </div>
           {sensitiveWords.length === 0 ? (
             <p className="text-gray-500">暂无敏感词</p>
           ) : (
@@ -358,6 +413,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
                   <span className="text-red-600 font-medium">{word.original}</span>
                   <span className="mx-2">→</span>
                   <span className="text-green-600">{word.replacement}</span>
+                  <span className="text-xs text-gray-400 ml-2">({word.original.length}字)</span>
                 </div>
               ))}
             </div>

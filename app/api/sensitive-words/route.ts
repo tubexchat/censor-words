@@ -52,8 +52,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Excel文件中没有找到有效的敏感词数据' }, { status: 400 })
     }
 
+    // 按照敏感词长度排序（长词优先）
+    const sortedWords = words.sort((a, b) => b.original.length - a.original.length)
+
     // 更新敏感词库
-    const success = await updateSensitiveWords(words)
+    const success = await updateSensitiveWords(sortedWords)
     
     if (!success) {
       return NextResponse.json({ error: '敏感词库更新失败' }, { status: 500 })
@@ -65,12 +68,42 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: `敏感词库更新成功，共导入 ${words.length} 个敏感词`,
-      count: words.length
+      message: `敏感词库更新成功，共导入 ${sortedWords.length} 个敏感词`,
+      count: sortedWords.length
     })
 
   } catch (error) {
     console.error('更新敏感词库错误:', error)
     return NextResponse.json({ error: '敏感词库更新失败' }, { status: 500 })
+  }
+}
+
+// 删除敏感词库（仅管理员）
+export async function DELETE(request: NextRequest) {
+  try {
+    const user = await getUserFromRequest(request)
+    if (!user || !hasPermission(user, 'admin')) {
+      return NextResponse.json({ error: '权限不足' }, { status: 403 })
+    }
+
+    // 清空敏感词库
+    const success = await clearSensitiveWords()
+    
+    if (!success) {
+      return NextResponse.json({ error: '敏感词库删除失败' }, { status: 500 })
+    }
+    
+    // 记录操作日志
+    const clientIP = getClientIP(request)
+    await addOperationLog(user.id, '删除敏感词库', '清空所有敏感词', clientIP)
+
+    return NextResponse.json({
+      success: true,
+      message: '敏感词库已清空'
+    })
+
+  } catch (error) {
+    console.error('删除敏感词库错误:', error)
+    return NextResponse.json({ error: '敏感词库删除失败' }, { status: 500 })
   }
 } 
