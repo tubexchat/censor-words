@@ -355,9 +355,9 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {sensitiveWords.map((word, index) => (
                 <div key={index} className="bg-white p-2 rounded border text-sm">
-                  <span className="text-red-600 font-medium">{word.originalWord}</span>
+                  <span className="text-red-600 font-medium">{word.original}</span>
                   <span className="mx-2">→</span>
-                  <span className="text-green-600">{word.replacementWord}</span>
+                  <span className="text-green-600">{word.replacement}</span>
                 </div>
               ))}
             </div>

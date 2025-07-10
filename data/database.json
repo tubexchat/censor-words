@@ -1,0 +1,1241 @@
+{
+  "users": [
+    {
+      "id": "185a2e14-e458-42c4-9ae1-6f15edd4ab3a",
+      "username": "admin",
+      "password": "$2a$10$X.s6f5NKEFa5ESH9YgmaW.xcjQuJrA0VzAEVDmTguxurggIv5lb7i",
+      "role": "admin",
+      "created_at": "2025-07-10T09:14:17.254Z"
+    }
+  ],
+  "sensitive_words": [
+    {
+      "id": "54c24e16-e718-4e74-af7d-39f94f2ba62b",
+      "original": "被替换内容",
+      "replacement": "替换为",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "256c8af5-aaae-4c28-8b3e-72df81828efd",
+      "original": "血",
+      "replacement": "xue",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "8969a98c-8bf0-44c7-9f22-b3d85f2a9607",
+      "original": "红包",
+      "replacement": "redbao",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "32c0a65c-9f31-4c3b-84e1-2d14e44cfc93",
+      "original": "还他妈",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "c2fe9e11-cbd4-402e-a5d0-da7145f3741d",
+      "original": "瞎活",
+      "replacement": "瞎H",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "bf18cffd-b106-4181-ba55-26df5fbb664c",
+      "original": "活着",
+      "replacement": "H着",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "f50e8527-8744-4c25-b146-ac660da4b1ae",
+      "original": "运",
+      "replacement": "yun",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "ef433db7-d2c3-48b5-94c3-665c33e5fb53",
+      "original": "现在混的",
+      "replacement": "现在~的",
+      "created_at": "2025-07-10T09:27:16.022Z"
+    },
+    {
+      "id": "99854834-eecd-4636-acab-6896bfd4379f",
+      "original": "霉",
+      "replacement": "莓",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "095de6a3-53dc-4537-ac82-cf1b13a6535d",
+      "original": "佛",
+      "replacement": "fo",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "0ad9534a-e1ba-4371-875d-a54e92db3cc8",
+      "original": "背运",
+      "replacement": "背",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "7ab1fd93-4e10-420c-ad8c-581f591fd387",
+      "original": "承担",
+      "replacement": "承dan",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "76d1fb64-3560-42e9-af65-1644bfdbeb40",
+      "original": "钱",
+      "replacement": "qian",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "860781d4-45ac-4c5b-bc1b-981550313419",
+      "original": "道家",
+      "replacement": "D家",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "5d0a74e4-1543-4223-9021-4dec10069399",
+      "original": "死",
+      "replacement": "si",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f499b3a5-a93a-41c0-af16-28699578cde5",
+      "original": "活法",
+      "replacement": "H法",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "715fddc2-80bf-48fa-acc4-f8b3c60cc259",
+      "original": "生病",
+      "replacement": "生bing",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "978f774e-d26b-478b-9862-5b1d8dfed210",
+      "original": "去他妈的",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ab9e7104-2f5c-4861-8567-af1a4406a6b5",
+      "original": "精力",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "08625ad1-8936-4cbf-845e-63a3f136bfa0",
+      "original": "最",
+      "replacement": "zui",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4574575d-3da0-420e-85bb-cb3bd773f994",
+      "original": "这女生",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "550c47de-26f3-4eb0-8173-3b730c0d7a78",
+      "original": "睡",
+      "replacement": "shui",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4e0aa39a-39aa-4e2b-a8c8-0ed75ecf4e3c",
+      "original": "亲嘴",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "91089531-0e41-433a-b30b-120777a584a5",
+      "original": "色",
+      "replacement": "se",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "783790e7-5df2-4154-b702-b4144e1ffbde",
+      "original": "傻",
+      "replacement": "sha",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "34954494-374f-4245-a740-f1f36c7c4571",
+      "original": "健康",
+      "replacement": "健kang",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "3ea8252d-1666-4d6f-a8fa-91ccd716930e",
+      "original": "焦虑",
+      "replacement": "jiaolv",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "61f165d4-d4a8-4f43-a314-f1dd4de61b7d",
+      "original": "去他妈",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "5364883f-ad5b-4f69-b7f3-f953581cf2ad",
+      "original": "命",
+      "replacement": "M",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "054a4617-d991-49a2-b399-f843124442c6",
+      "original": "祭祖",
+      "replacement": "祭~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d076da16-de3a-4c14-a2f0-8811c90c3190",
+      "original": "体弱",
+      "replacement": "体~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "929ff4b1-7e13-4c22-b3ea-dd6cab7096d5",
+      "original": "精神",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "5e2456b9-82b0-4859-9a52-45682a964d9d",
+      "original": "吃喝拉撒",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6a59aa68-e42b-4465-90fb-607f66df248b",
+      "original": "旺",
+      "replacement": "W",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "dceba7aa-be13-4737-8380-be454949892f",
+      "original": "能量",
+      "replacement": "nengliang",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4a45d7f2-0838-43d8-8fc5-d4d6ee22b3bc",
+      "original": "一旦",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "77712c7d-90f7-4741-98f3-ee167c99ab1b",
+      "original": "牢骚",
+      "replacement": "牢~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8a9a4065-bee0-4c1e-9646-b01d63c48623",
+      "original": "毛病",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d5aab8ac-e68a-44da-abf8-85d09eba2578",
+      "original": "财",
+      "replacement": "cai",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c8d3aeb4-dbb8-47ac-8690-2491f51c9036",
+      "original": "皇城寺庙",
+      "replacement": "~城~庙",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "1780bfde-436c-45b3-bc2e-8daf83fe29a9",
+      "original": "祸",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "7076125c-d793-439a-8b89-ab9847218a1d",
+      "original": "血光之灾",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "fd8704c6-94ea-49ef-a4ba-7131be0e05b1",
+      "original": "功德",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "fecba962-52e9-481c-95d8-682b98845154",
+      "original": "破财",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ecbfd22e-8183-44f5-a936-40d8c8553ef7",
+      "original": "克",
+      "replacement": "K",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "33f0dc37-ef70-463d-a2b9-e2ef99eb7717",
+      "original": "病",
+      "replacement": "B",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "20b17f4e-6eb9-41d2-85ef-844f1c03d86f",
+      "original": "逼",
+      "replacement": "B",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "22e237fa-c68d-45b4-9dec-367588c4aff7",
+      "original": "天",
+      "replacement": "T",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a04c770d-4f50-48a7-a2d1-e81b9d343130",
+      "original": "驳",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2fbf873c-d275-42c2-8bcb-45cfc0aa9ca8",
+      "original": "肝",
+      "replacement": "gan",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6bdf4ae6-1b74-48b4-a42b-0a28d6bd6119",
+      "original": "脾胃",
+      "replacement": "piwei",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4e91745b-b578-42bb-a0c2-565eabe3a968",
+      "original": "骂",
+      "replacement": "M",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e4a01b5a-cd82-4569-ab88-dfd3bc5def00",
+      "original": "绝对",
+      "replacement": "J对",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c40ccc5b-ec15-4aa8-b3b5-8f13272debd1",
+      "original": "显化",
+      "replacement": "X化",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f7a92fe4-ed9e-4e6f-b745-606b72b08723",
+      "original": "死",
+      "replacement": "4",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2f4c0036-5c25-4878-9ed2-ee5f36b60f39",
+      "original": "道德经",
+      "replacement": "D~经",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "21f1e872-3172-4204-aa6a-dc9af6504dcb",
+      "original": "道",
+      "replacement": "D",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "35222596-6e34-4bbf-b3c9-cc683cc25746",
+      "original": "艮",
+      "replacement": "geng",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "b54f81d5-0312-46ca-98ae-6310bf47b7fd",
+      "original": "花完",
+      "replacement": "~完",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ffabd84a-0c14-4b11-a084-8780a69ea859",
+      "original": "干",
+      "replacement": "gan",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "1689ffc2-c78b-49cd-95e7-5b61816553c9",
+      "original": "减肥",
+      "replacement": "减F",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c6e761b4-2161-46b1-8a13-8de53a068c02",
+      "original": "没瘦",
+      "replacement": "没S",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f03a9ed6-7d37-451e-83e9-623609bd2a3a",
+      "original": "金子",
+      "replacement": "gold子",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "64918ab9-15e6-4e45-a342-22d1526fbd7d",
+      "original": "玄学",
+      "replacement": "x学",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "b4ba7db8-88a4-446c-ace3-2f78d8c1c27e",
+      "original": "招小人",
+      "replacement": "~xiao人",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "eb055ef6-61cf-4e9d-adcf-f2b2267c09a2",
+      "original": "财",
+      "replacement": "cai",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c7be4245-940d-43ca-8317-3e6d8c435845",
+      "original": "精气",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "0a70a1c4-1e26-41a0-9b29-e243a37a5f98",
+      "original": "打",
+      "replacement": "da",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "17c54a94-ceab-48ec-a9dc-8ae5d7648bba",
+      "original": "哪来的钱",
+      "replacement": "哪来的qian",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e67a7f0a-3c1e-4198-9cb0-99f4bccd15b1",
+      "original": "蛐蛐",
+      "replacement": "区区",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8f614611-655e-497e-b31b-d1f56293e5cf",
+      "original": "财神",
+      "replacement": "财~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6fb94a22-6635-4f3a-9721-6d0b95c79349",
+      "original": "克",
+      "replacement": "K",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "32973b0e-f969-4e71-88e4-eb927c305a35",
+      "original": "比",
+      "replacement": "B",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e30fdf15-3c46-4212-8560-a30d975fc728",
+      "original": "金山",
+      "replacement": "~山",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d8cad710-82bb-4281-9df2-f6f1d005234c",
+      "original": "种恶因",
+      "replacement": "种恶~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "732d1851-fa4f-410b-9cbd-726e463693bb",
+      "original": "还恶果",
+      "replacement": "还恶~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6438a5ae-562c-40e3-8fdd-209d1785e5f3",
+      "original": "积德",
+      "replacement": "JD",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "05364b9d-94ba-44fb-8d85-51b00648be2a",
+      "original": "自尊",
+      "replacement": "自遵",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4fe84846-c43a-46e0-8dca-b5bba10dfbe3",
+      "original": "伤天害理",
+      "replacement": "伤TH理",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ad8220ed-c760-488a-9d6f-45f6aa7d003a",
+      "original": "人伦",
+      "replacement": "人~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "09058aeb-2cef-420b-a542-ffc200c69252",
+      "original": "五榴月",
+      "replacement": "五0月",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "226eb927-2d4d-494d-95f2-c1528c45cfd8",
+      "original": "阳气",
+      "replacement": "Y气",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "99c47a10-9255-4dd8-b240-20217b5a627e",
+      "original": "晦气",
+      "replacement": "H气",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e2df0b36-f6b7-4eb0-bd4a-03eb17763c40",
+      "original": "污秽",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "41e26ac0-fbb6-42de-ae0b-7f01e8548e8f",
+      "original": "丢人",
+      "replacement": "丢~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4573a8da-fe4a-4ba1-9912-f70b947373dd",
+      "original": "活着就是为了去死",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "20acbbd0-766f-43f4-8397-de6c115b0820",
+      "original": "草台班子",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2d2c4862-6ec0-4249-8ff7-fe71746c1054",
+      "original": "算了",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f5cadab4-4c6b-493e-a106-5f96e38224ca",
+      "original": "灾",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "94789a87-f168-4de1-abb4-f16c46f413ec",
+      "original": "寺庙",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4eedc546-4d0b-4f71-adce-173caa293549",
+      "original": "镀金身",
+      "replacement": "镀金~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "59218ae9-8ce4-4790-b0a7-2a79ef400c98",
+      "original": "世界",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4fb2965b-9e71-4f76-a578-9017e8e9d76e",
+      "original": "人性",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4d61952e-d428-407a-8359-d90939f46d3a",
+      "original": "小人",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c68151af-ae69-4dc3-b777-40f7e7190249",
+      "original": "身弱",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f3cd7916-2447-4275-969c-d65d6a3b3c18",
+      "original": "身强",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "80cd37a8-6f63-433c-bc83-db7cf11cc4ad",
+      "original": "自杀",
+      "replacement": "自~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "89c4783c-06ef-4ca2-8bbd-42db6ff0e8a3",
+      "original": "地狱",
+      "replacement": "地~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "0fe6704d-bc2a-4a1b-8ac3-6c83bd7e5442",
+      "original": "金闪闪",
+      "replacement": "~闪闪",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8a1eb2ba-40af-49a5-aa09-3f82a38864af",
+      "original": "神明",
+      "replacement": "god",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f3c968b2-9f7c-4a20-b3ae-02677779e813",
+      "original": "缘",
+      "replacement": "yuan",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "fea1981e-64bc-40bb-a52c-7a179bc4397d",
+      "original": "朋友圈",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c12f9200-1e36-4905-a02b-2799bfe1e90f",
+      "original": "丧气话",
+      "replacement": "尚QI话",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a04ab119-944f-4702-b476-3db1c4e5d7d0",
+      "original": "福",
+      "replacement": "FU",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d7e73391-1bcf-43f0-a5cc-59aa2db3de1d",
+      "original": "吉",
+      "replacement": "JI",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f7a67d64-8743-48b3-a3cc-46feae8c7b58",
+      "original": "死",
+      "replacement": "SI",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "617f94f4-4f23-4cd8-9484-552a22a46451",
+      "original": "现金",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e047b39d-6e04-47e6-aa86-ed0ffb69b522",
+      "original": "财富",
+      "replacement": "贝才",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "122fb027-de1c-4496-a6da-dc3605b0b1ca",
+      "original": "煞气",
+      "replacement": "sha气",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "eac30c53-4fa2-4b46-ac1d-2e3a0bb169db",
+      "original": "磁场",
+      "replacement": "ci场",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a81a7b0c-587c-42d6-832e-fc4b3d9f3903",
+      "original": "因果",
+      "replacement": "yin果",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "66f8f713-29f6-48a2-aa93-672177ec865c",
+      "original": "避谶",
+      "replacement": "避c",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "31f9d009-9d39-46d3-8de5-7d51117b6086",
+      "original": "良缘",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a1971c53-7edb-46d6-b798-cabfab21aee3",
+      "original": "发誓",
+      "replacement": "发4",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a2f70591-2017-49e2-857a-ec7aebbe3a9a",
+      "original": "业力",
+      "replacement": "Y力",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a22c1cbd-a876-4765-a9de-a5d1b7831370",
+      "original": "磁场",
+      "replacement": "某场",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e93db169-8a6d-45e5-b4da-452ab5d1ca8d",
+      "original": "五行",
+      "replacement": "五xing",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8870cb2c-0cf4-4834-a4fb-d70d7754b713",
+      "original": "中医",
+      "replacement": "中yi",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8099c1da-8005-4955-9eae-bb74ecfe2993",
+      "original": "补阳",
+      "replacement": "bu",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "0def4570-abfb-49ee-8184-eadf38b62ac7",
+      "original": "精",
+      "replacement": "J",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "3e0a5a07-c464-4508-8896-17a8abec004d",
+      "original": "气场",
+      "replacement": "qi场",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2911d5a7-5805-4916-9e27-382d277b2b71",
+      "original": "卧室",
+      "replacement": "bed",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2f220491-009a-4daf-bcb5-ba7222452066",
+      "original": "辟邪",
+      "replacement": "避鞋",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "64785f52-159a-44a0-9c5e-2cc5534c10ec",
+      "original": "送葬",
+      "replacement": "送Z",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6dfb07a1-c68f-40d7-b366-5efb3e4724a3",
+      "original": "看相",
+      "replacement": "KS",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "7fcac979-7058-4211-82ca-48f6ba6f5063",
+      "original": "性关系",
+      "replacement": "X关系",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ac320892-01f4-4896-a4de-edc16b5e7f03",
+      "original": "中国",
+      "replacement": "兔子",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4e553e27-106a-4f74-b6f6-478503fb4c83",
+      "original": "印度",
+      "replacement": "三哥",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d4eeb547-b857-48b8-9206-f2eecbc9fcba",
+      "original": "非洲",
+      "replacement": "小黑",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "5b8fca17-34a9-4e09-9210-6d96ade5eaa3",
+      "original": "出生率",
+      "replacement": "初升绿",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d790eb72-9eec-4bdc-9879-33b1cec945cb",
+      "original": "阿飘",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8e7287b6-4f90-44e9-8515-ab9c977f016c",
+      "original": "中元",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "eef4fcc8-ea61-4827-8d04-bf84da378067",
+      "original": "镇宅",
+      "replacement": "证宅",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "80834028-0af2-42ba-8b74-2a0c77fc4305",
+      "original": "顺",
+      "replacement": "瞬",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "14e77484-9649-430e-9018-d7cdab8c9b58",
+      "original": "毒害",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c20b1d1c-608f-4bb0-aba6-1529cc0136b3",
+      "original": "逆天改命",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2b491ab1-9e32-4261-8e2c-8f51982f9bcf",
+      "original": "愚蠢",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c6a0d1bb-21b0-4615-9dec-54a6fc3b3943",
+      "original": "衰",
+      "replacement": "摔",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "cdfd115f-85c0-4f7d-809c-6c79b5855b5b",
+      "original": "气场",
+      "replacement": "起场",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e4a4435c-6b84-4608-8069-c308fc1b1416",
+      "original": "害",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "748f1d61-5b16-4b32-80d9-5ffaa965d4ee",
+      "original": "万",
+      "replacement": "w",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "aa074a56-83e2-407e-9cd0-490e29d1a0b2",
+      "original": "真相",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4a8941ea-9912-421b-919b-c38c1e6d550e",
+      "original": "剧本",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a79552e4-d343-4fb7-b588-98eb453266fc",
+      "original": "消除",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "731c9b9f-902c-468f-b6f7-4d6d87b3a83a",
+      "original": "倍",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "78a45dc8-9b68-4ed4-b05b-2ad094158065",
+      "original": "债",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "005ec9e9-5442-4283-b5f7-0ce4ca95d8a2",
+      "original": "劫",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e294a88e-af79-4229-901f-bbc9e3fb4a4a",
+      "original": "孟婆",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f010716d-cedc-408f-9e47-d3c523a00551",
+      "original": "月老",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "953c3124-5f91-420d-a41b-991893902db1",
+      "original": "狗",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6f18b846-ed3a-4970-ade2-74148222d152",
+      "original": "看八字",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "bcc41e28-30cc-4fc0-8f19-6b5cc06a8dca",
+      "original": "八字",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4da439c0-c5f2-4596-b95b-7f1df9bbbe19",
+      "original": "痛",
+      "replacement": "t",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "e3409747-9a84-4e59-8ae4-bc7ea0743baa",
+      "original": "窟窿",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "b50bede9-2aae-47ab-a721-a3ef4ad46106",
+      "original": "老",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "00495bc6-ff65-416a-bf21-6b5ba200d502",
+      "original": "崩盘",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4152f677-6db4-4d1f-9dd7-3beb462b0ff3",
+      "original": "背叛",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "4ac20d98-53c4-4227-91fe-a310ba2f9aee",
+      "original": "伤害",
+      "replacement": "商海",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d0d435b6-eef2-4058-b165-10bd40c45828",
+      "original": "例子",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "b4648d3a-d0f2-4d1c-984e-acfa657f711b",
+      "original": "结婚",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "cf170051-dc0f-45e1-a812-bfcdddb1656a",
+      "original": "抗衰老",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "d4ea6454-6308-41b1-b887-4e12337daaf8",
+      "original": "赚",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "cb20b13f-2fd0-41b1-8061-34eaed50a193",
+      "original": "诋毁",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "9862a9b3-64f0-4b81-bc33-adaac33d7553",
+      "original": "别人都二胎了",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "cef4f71e-372e-44bd-8f33-d81fddd08603",
+      "original": "案例",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "26d4cb45-e88f-4f6a-b849-398fe991d364",
+      "original": "效果",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ff798281-ac49-496c-bb5e-2e1cd708a15f",
+      "original": "关键",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "834e058d-1ede-400d-8734-71aedc24e66e",
+      "original": "票子",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "621ba6a1-4bf5-4674-9ac7-2a9d81ee8dfb",
+      "original": "烂桃花",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "dfd0ab07-902e-4ccc-ab96-2bebd2941328",
+      "original": "招财旺家",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "25b99876-dda3-41f7-a7d5-75e384badd62",
+      "original": "解",
+      "replacement": "j",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "2cba0614-3a17-4ab8-8832-860f8e757f82",
+      "original": "情绪",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "86e0fec6-a18d-49cf-80b9-2782708da379",
+      "original": "医生",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c413bebe-1e07-4840-a03d-9fff2d32d86e",
+      "original": "抽奖",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "5a081204-4044-4472-9f13-aa28d90db869",
+      "original": "风险",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "ec01e650-666a-4074-97bf-ca6d86e75912",
+      "original": "资产冻结",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6dfe500b-fd6d-49ae-b879-7602df023f9e",
+      "original": "股票",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "3066704e-2bb2-4450-a9a9-50d3fbee3bdb",
+      "original": "同城交友",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "cd9cc9e8-8c54-4173-9b5e-e63fb64a19ab",
+      "original": "招聘软件",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "be3d44d8-8faa-4bca-b9c4-90016745c7a2",
+      "original": "舔狗",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "539fb98b-65dc-486c-b680-9d6d24e3872d",
+      "original": "改善",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "6cece3cd-377b-455b-b3cc-87f8f4cdc866",
+      "original": "烦恼",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "8455b7ea-cd0a-4b42-bcdf-2d5d4397c957",
+      "original": "花呗",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "428bf2f5-67d9-49e2-bbea-8d752c91b2d5",
+      "original": "借呗",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "33ea04af-be41-4aba-a522-2f5180ac9b63",
+      "original": "窟窿",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "c7bab34e-faee-42b5-b1d0-2f4fe7bff8e8",
+      "original": "符",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "57473f80-97eb-4ae4-bb0f-ec31b7d8696f",
+      "original": "缓解",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "755c83cd-dde2-4953-85bf-33b4ecad2916",
+      "original": "算命",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "626dacf5-541b-48f0-b6df-6db7ce7cf6f6",
+      "original": "注意",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "9a2c42a3-7ef9-4e53-8938-700828579470",
+      "original": "祸",
+      "replacement": "h",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "dd85e429-86a0-435e-b1e2-588293867f14",
+      "original": "阳寿",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "0256c5d7-a4ee-4379-9908-a71c3cae0b26",
+      "original": "帮助大家盘一盘",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "f58b2847-9c1b-403c-9850-99ff1357e0bb",
+      "original": "分泌",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "3dab507f-5671-4f34-b6f7-f8d5acc7d613",
+      "original": "神",
+      "replacement": "s",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "49c911de-47e0-4a2e-b4bc-5f30ee25c8a2",
+      "original": "水",
+      "replacement": "shui",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "53d15609-cf6c-46f5-8005-b03b9f26ae08",
+      "original": "伤天害理",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "1b562aa8-cf17-4fa2-ab83-91c946973d81",
+      "original": "轮回",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "30b0c3df-7a20-44a7-b7ce-a57005d80680",
+      "original": "功德",
+      "replacement": "~",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    },
+    {
+      "id": "a0da9bf4-6590-43c9-b17d-0f263c086506",
+      "original": "王",
+      "replacement": "W",
+      "created_at": "2025-07-10T09:27:16.023Z"
+    }
+  ],
+  "operation_logs": [
+    {
+      "id": "42b7f545-b96d-466e-8b34-2b99f5069136",
+      "user_id": "185a2e14-e458-42c4-9ae1-6f15edd4ab3a",
+      "operation": "用户登录",
+      "details": "用户 admin 登录",
+      "ip_address": "::1",
+      "created_at": "2025-07-10T09:14:17.333Z"
+    },
+    {
+      "id": "280f4cd0-dc76-425e-9f16-a5902c3c005c",
+      "user_id": "185a2e14-e458-42c4-9ae1-6f15edd4ab3a",
+      "operation": "更新敏感词库",
+      "details": "上传文件: temp tech.xlsx, 导入 199 个敏感词",
+      "ip_address": "::1",
+      "created_at": "2025-07-10T09:27:16.024Z"
+    },
+    {
+      "id": "bdfa0115-1c43-46c4-83eb-9bed1fd6a06b",
+      "user_id": "185a2e14-e458-42c4-9ae1-6f15edd4ab3a",
+      "operation": "处理Word文档",
+      "details": "处理文件: temp tech.docx",
+      "ip_address": "::1",
+      "created_at": "2025-07-10T09:28:46.331Z"
+    },
+    {
+      "id": "7bc05bb9-c19c-4ece-abe3-020314faa80d",
+      "user_id": "185a2e14-e458-42c4-9ae1-6f15edd4ab3a",
+      "operation": "处理Word文档",
+      "details": "处理文件: temp tech.docx",
+      "ip_address": "::1",
+      "created_at": "2025-07-10T09:36:25.585Z"
+    }
+  ]
+}

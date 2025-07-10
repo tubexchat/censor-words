@@ -9,34 +9,35 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "xlsx": "^0.18.5",
-    "pizzip": "^3.1.6",
+    "bcryptjs": "^2.4.3",
+    "docx": "^9.5.1",
     "docxtemplater": "^3.47.0",
     "file-saver": "^2.0.5",
-    "lucide-react": "^0.363.0",
-    "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
-    "next-auth": "^4.24.5",
-    "uuid": "^9.0.1",
+    "lucide-react": "^0.363.0",
     "mammoth": "^1.6.0",
-    "officegen": "^0.6.5"
+    "next": "14.2.0",
+    "next-auth": "^4.24.5",
+    "officegen": "^0.6.5",
+    "pizzip": "^3.1.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bcryptjs": "^2.4.5",
+    "@types/file-saver": "^2.0.7",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/file-saver": "^2.0.7",
-    "@types/bcryptjs": "^2.4.5",
-    "@types/jsonwebtoken": "^9.0.5",
     "@types/uuid": "^9.0.6",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.0"
+    "typescript": "^5"
   }
-} 
+}
