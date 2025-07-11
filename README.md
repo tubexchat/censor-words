@@ -52,6 +52,15 @@ NODE_ENV=development
 
 ```bash
 npm run dev
+# 快速启动（推荐）
+./start.sh
+
+# 或者使用 npm 脚本
+npm run pm2:start    # 启动应用
+npm run pm2:stop     # 停止应用
+npm run pm2:restart  # 重启应用
+npm run pm2:logs     # 查看日志
+npm run pm2:monit    # 监控面板
 ```
 
 访问 [http://localhost:3000](http://localhost:3000) 查看应用。
