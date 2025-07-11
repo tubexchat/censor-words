@@ -504,7 +504,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
                     {u.role === 'admin' ? '管理员' : '操作员'}
                   </span>
                 </td>
-                <td className="px-4 py-3">{new Date(u.createdAt).toLocaleString()}</td>
+                <td className="px-4 py-3">{new Date(u.created_at).toLocaleString()}</td>
                 <td className="px-4 py-3">
                   {u.id !== user.id && (
                     <button
