@@ -44,7 +44,20 @@ export async function POST(request: NextRequest) {
     
     // 记录操作日志
     const clientIP = getClientIP(request)
-    await addOperationLog(user.id, '处理Word文档', `处理文件: ${wordFile.name}`, clientIP)
+    console.log('📝 准备记录操作日志:', {
+      userId: user.id,
+      username: user.username,
+      fileName: wordFile.name,
+      ip: clientIP
+    })
+    
+    const logSuccess = await addOperationLog(user.id, '处理Word文档', `处理文件: ${wordFile.name}`, clientIP)
+    
+    if (logSuccess) {
+      console.log('✅ 操作日志记录成功')
+    } else {
+      console.error('❌ 操作日志记录失败')
+    }
 
     return NextResponse.json({
       success: true,

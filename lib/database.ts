@@ -257,7 +257,10 @@ export async function updateSensitiveWords(words: Array<{ original: string; repl
 // 操作记录方法
 export async function addOperationLog(userId: string, operation: string, details: string, ipAddress: string): Promise<boolean> {
   try {
+    console.log('🔧 addOperationLog 开始执行:', { userId, operation, details, ipAddress })
+    
     const data = await readDatabase()
+    console.log('📖 当前数据库中的日志数量:', data.operation_logs.length)
     
     const newLog: OperationLog = {
       id: uuidv4(),
@@ -268,11 +271,15 @@ export async function addOperationLog(userId: string, operation: string, details
       created_at: new Date().toISOString()
     }
     
+    console.log('📝 准备添加新日志:', newLog)
+    
     data.operation_logs.push(newLog)
     await writeDatabase(data)
+    
+    console.log('✅ 日志写入数据库成功，新的日志数量:', data.operation_logs.length)
     return true
   } catch (error) {
-    console.error('Add operation log failed:', error)
+    console.error('❌ Add operation log failed:', error)
     return false
   }
 }
