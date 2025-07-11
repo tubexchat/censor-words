@@ -29,6 +29,5 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /home/ubuntu/censor-words
-            npm install
-            npm run build
+       
  
