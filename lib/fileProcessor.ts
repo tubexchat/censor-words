@@ -51,26 +51,41 @@ export function replaceWordsInText(text: string, words: Array<{original: string,
   let replacedText = text
   const replacements: Array<{original: string, replacement: string, position: number}> = []
   
+  // 首先找到所有需要替换的位置（基于原始文本）
   for (const word of sortedWords) {
     const regex = new RegExp(escapeRegExp(word.original), 'g')
-    let match
+    let match: RegExpExecArray | null
     
-    while ((match = regex.exec(replacedText)) !== null) {
-      replacements.push({
-        original: word.original,
-        replacement: word.replacement,
-        position: match.index
+    while ((match = regex.exec(text)) !== null) {
+      // 检查这个位置是否已经被其他更长的词替换了
+      const isAlreadyReplaced = replacements.some(existing => {
+        const existingEnd = existing.position + existing.original.length
+        const currentEnd = match!.index + word.original.length
+        return (match!.index < existingEnd && currentEnd > existing.position)
       })
       
-      // 替换找到的词
-      replacedText = replacedText.substring(0, match.index) + 
-                   word.replacement + 
-                   replacedText.substring(match.index + word.original.length)
-      
-      // 重置正则表达式的lastIndex，因为字符串已经改变
-      regex.lastIndex = match.index + word.replacement.length
+      if (!isAlreadyReplaced) {
+        replacements.push({
+          original: word.original,
+          replacement: word.replacement,
+          position: match.index
+        })
+      }
     }
   }
+  
+  // 按位置排序（从后往前，这样不会影响前面的位置）
+  replacements.sort((a, b) => b.position - a.position)
+  
+  // 执行替换
+  for (const replacement of replacements) {
+    replacedText = replacedText.substring(0, replacement.position) + 
+                  replacement.replacement + 
+                  replacedText.substring(replacement.position + replacement.original.length)
+  }
+  
+  // 重新按位置排序（从前往后）
+  replacements.sort((a, b) => a.position - b.position)
   
   return {
     originalText: text,
@@ -131,7 +146,23 @@ function generateHighlightedParagraphs(text: string, replacements: Array<{origin
   const lines = text.split('\n')
   const paragraphs: Paragraph[] = []
   
+  // 预计算每行在原文中的位置
+  let globalOffset = 0
+  const linePositions: Array<{line: string, start: number, end: number}> = []
+  
   for (const line of lines) {
+    linePositions.push({
+      line: line,
+      start: globalOffset,
+      end: globalOffset + line.length
+    })
+    globalOffset += line.length + 1 // +1 for the newline character
+  }
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    const linePosition = linePositions[i]
+    
     if (line.trim() === '') {
       paragraphs.push(new Paragraph({ text: "" }))
       continue
@@ -141,26 +172,93 @@ function generateHighlightedParagraphs(text: string, replacements: Array<{origin
     let currentIndex = 0
     
     // 找到这一行中的所有替换
-    const lineReplacements = replacements.filter(replacement => {
-      const lineStart = text.indexOf(line)
-      const lineEnd = lineStart + line.length
-      const replPos = isOriginal ? replacement.position : 
-        text.indexOf(replacement.replacement, replacement.position)
-      return replPos >= lineStart && replPos < lineEnd
-    })
+    const lineReplacements: Array<{
+      original: string
+      replacement: string
+      position: number
+      lineRelativePos: number
+      searchText: string
+    }> = []
     
-    // 按位置排序
-    lineReplacements.sort((a, b) => {
-      const posA = isOriginal ? a.position : text.indexOf(a.replacement, a.position)
-      const posB = isOriginal ? b.position : text.indexOf(b.replacement, b.position)
-      return posA - posB
-    })
-    
-    for (const replacement of lineReplacements) {
-      const searchText = isOriginal ? replacement.original : replacement.replacement
-      const searchIndex = line.indexOf(searchText, currentIndex)
+    for (const replacement of replacements) {
+      let wordPosition = -1
+      let searchText = ''
       
-      if (searchIndex !== -1) {
+      if (isOriginal) {
+        // 对于原文，查找敏感词在该行中的位置
+        searchText = replacement.original
+        // 检查该敏感词是否在当前行中
+        if (replacement.position >= linePosition.start && replacement.position < linePosition.end) {
+          wordPosition = replacement.position - linePosition.start
+        }
+      } else {
+        // 对于替换后文本，查找替换词在该行中的位置
+        searchText = replacement.replacement
+        // 计算替换词在替换后文本中的大致位置
+        // 这里需要考虑之前的替换对位置的影响
+        let adjustedPos = replacement.position
+        
+        // 计算位置偏移（由于之前的替换造成的长度变化）
+        for (const prevReplacement of replacements) {
+          if (prevReplacement.position < replacement.position) {
+            const lengthDiff = prevReplacement.replacement.length - prevReplacement.original.length
+            adjustedPos += lengthDiff
+          }
+        }
+        
+        // 检查调整后的位置是否在当前行中
+        if (adjustedPos >= linePosition.start && adjustedPos < linePosition.end) {
+          wordPosition = adjustedPos - linePosition.start
+        }
+      }
+      
+      if (wordPosition >= 0) {
+        // 验证文本是否真的在该位置
+        if (line.substring(wordPosition, wordPosition + searchText.length) === searchText) {
+          lineReplacements.push({
+            original: replacement.original,
+            replacement: replacement.replacement,
+            position: replacement.position,
+            lineRelativePos: wordPosition,
+            searchText: searchText
+          })
+        } else {
+          // 如果位置不匹配，尝试在该行中搜索
+          const searchIndex = line.indexOf(searchText)
+          if (searchIndex !== -1) {
+            lineReplacements.push({
+              original: replacement.original,
+              replacement: replacement.replacement,
+              position: replacement.position,
+              lineRelativePos: searchIndex,
+              searchText: searchText
+            })
+          }
+        }
+      }
+    }
+    
+    // 按行内位置排序，避免重叠
+    lineReplacements.sort((a, b) => a.lineRelativePos - b.lineRelativePos)
+    
+    // 去重，避免重叠的高亮
+    const uniqueReplacements: typeof lineReplacements = []
+    for (const replacement of lineReplacements) {
+      const endPos = replacement.lineRelativePos + replacement.searchText.length
+      const isOverlapping = uniqueReplacements.some(existing => {
+        const existingEnd = existing.lineRelativePos + existing.searchText.length
+        return (replacement.lineRelativePos < existingEnd && endPos > existing.lineRelativePos)
+      })
+      
+      if (!isOverlapping) {
+        uniqueReplacements.push(replacement)
+      }
+    }
+    
+    for (const replacement of uniqueReplacements) {
+      const searchIndex = replacement.lineRelativePos
+      
+      if (searchIndex >= currentIndex) {
         // 添加普通文本（如果有）
         if (searchIndex > currentIndex) {
           textRuns.push(new TextRun({
@@ -170,13 +268,13 @@ function generateHighlightedParagraphs(text: string, replacements: Array<{origin
         
         // 添加高亮文本
         textRuns.push(new TextRun({
-          text: searchText,
+          text: replacement.searchText,
           bold: true,
           color: isOriginal ? "FF0000" : "008000", // 红色：敏感词，绿色：替换词
           highlight: isOriginal ? "yellow" : "green"
         }))
         
-        currentIndex = searchIndex + searchText.length
+        currentIndex = searchIndex + replacement.searchText.length
       }
     }
     
