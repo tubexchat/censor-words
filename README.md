@@ -68,8 +68,8 @@ npm run pm2:monit    # 监控面板
 ### 4. 默认账号
 
 系统会自动创建默认管理员账号：
-- 用户名：`admin`
-- 密码：`admin123`
+- 用户名：`csyadmin`
+- 密码：`jiaowobaba321`
 
 ## 使用说明
 

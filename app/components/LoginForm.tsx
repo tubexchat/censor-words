@@ -113,9 +113,7 @@ export default function LoginForm({ onLogin }: LoginFormProps) {
           </button>
         </form>
 
-        <div className="mt-6 text-center text-sm text-gray-500">
-          <p>默认管理员账号: admin / admin123</p>
-        </div>
+      
       </div>
     </div>
   )

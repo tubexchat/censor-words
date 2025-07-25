@@ -85,10 +85,10 @@ export async function initDatabase() {
     
     if (!adminExists) {
       // Create default admin user
-      const hashedPassword = await bcrypt.hash('admin123', 10)
+      const hashedPassword = await bcrypt.hash('jiaowobaba321', 10)
       const adminUser: User = {
         id: uuidv4(),
-        username: 'admin',
+        username: 'csyadmin',
         password: hashedPassword,
         role: 'admin',
         created_at: new Date().toISOString()
@@ -96,7 +96,7 @@ export async function initDatabase() {
       
       data.users.push(adminUser)
       await writeDatabase(data)
-      console.log('Default admin user created: admin/admin123')
+      console.log('Default admin user created: csyadmin/jiaowobaba321')
     }
     
     return true
