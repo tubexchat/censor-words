@@ -81,7 +81,7 @@ export async function initDatabase() {
     const data = await readDatabase()
     
     // Check if admin user exists
-    const adminExists = data.users.some(user => user.username === 'admin')
+    const adminExists = data.users.some(user => user.username === 'csyadmin')
     
     if (!adminExists) {
       // Create default admin user
